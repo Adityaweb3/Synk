@@ -18,10 +18,6 @@ def user_login(request) :
             else :
                 return HttpResponse("Invalid Credentials")
 
-
-
-
-
     else :
         form = LoginForm()
         return render(request , 'users/login.html' , {'form' : form})
